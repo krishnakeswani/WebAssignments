@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid;
+            background-image: linear-gradient(red, purple);
+            animation-name: hi;
+            animation-duration: 700ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        
+        }
+        @keyframes hi {
+            0%{
+                transform: translateY(0);
+                animation-timing-function: ease-in;
+                
+            }
+            100%{
+                transform: translateY(495px) rotate(360deg);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+   <center> <div id="ball"></div></center>
+</body>
+</html>
