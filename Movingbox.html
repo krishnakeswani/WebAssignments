@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .cor{
+            width: 80vw;
+            height: 40vh;
+            background-color: aquamarine;
+            border: 2px solid;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .track{
+            display: flex;
+            animation: scroll 12s linear infinite;
+            width: max-content;
+
+        }
+        .grp{
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+        }
+        .card{
+            height: 300px;
+            width: 300px;
+            background-color: beige;
+            text-align: center;
+        }
+        @keyframes scroll {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cor">
+        <div class="track">
+            <div class="grp">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
+
+            </div>
+            <div class="grp">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
