@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 350px 350px 350px 350px 350px 350px;
+            gap: 5px;
+        }
+        .one{
+            border: 1.5px solid white;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: large;
+        }
+        #one{
+            background: linear-gradient(to right, red, blue);
+        }
+        #two{
+            background: linear-gradient(red, blue);
+        }
+        #three{
+            background: linear-gradient(to left, red, blue);
+        }
+        #four{
+            background: linear-gradient(to bottom right, red, blue);
+        }
+        #five{
+            background: linear-gradient(to top , red, blue);
+        }
+        #six{
+            background: linear-gradient(45deg, red, blue);
+        }
+        #seven{
+            background: linear-gradient(to right, red, blue, yellow, green, brown, purple);
+        }
+        #eight{
+            background: linear-gradient(to right, red 0%, yellow 50%, blue 100%);
+        }
+        #nine{
+            background: linear-gradient(to right, red 50%, blue 50%);
+        }
+        #ten{
+            background: radial-gradient(red, blue);
+        }
+        #eleven{
+            background: radial-gradient(circle, red, blue);
+        }
+        #bara{
+            background: radial-gradient(circle, red, blue, yellow,  rgb(245, 108, 4) );
+        }
+        #tera{
+            background: conic-grandient(red, blue);
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div id="main">
+        <div class="one" id="one">Linear Right</div>
+        <div class="one" id="two">Linear</div>
+        <div class="one" id="three">Linear Left</div>
+        <div class="one" id="four">Linear diagonal</div>
+        <div class="one" id="five">Linear Top</div>
+        <div class="one" id="six">Linear 45 deg</div>
+        <div class="one" id="seven">Multiple Color</div>
+        <div class="one" id="eight">Color Stop</div>
+        <div class="one" id="nine">Hard Stop</div>
+        <div class="one" id="ten">Radial</div>
+        <div class="one" id="eleven">Circle</div>
+        <div class="one" id="bara">Multiple circle</div>
+        <div class="one" id="tera"></div>
+        <div class="one" id="last"></div>
+        
+
+    </div>
+</body>
+</html>
